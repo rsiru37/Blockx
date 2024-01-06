@@ -4,9 +4,13 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <header>
+    <div class="header" style="margin: auto; text-align: center;">
+      <h1 margin="auto">BLOCK EXPLORER</h1>
+      <h3 margin="auto">For Ethereum Mainnet</h3>
+    </div>
       <nav>
-        <RouterLink to="/">Homey  </RouterLink>
-        <RouterLink to="/nft">  NFT</RouterLink>
+        <RouterLink to="/">Home  </RouterLink>
+        <!-- <RouterLink to="/nft">  NFT</RouterLink> -->
       </nav>
   </header>
   <RouterView />

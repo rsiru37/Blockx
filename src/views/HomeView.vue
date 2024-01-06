@@ -1,7 +1,4 @@
 <template>
-  <div class="container" style="margin-top: 3%, float: left;">
-    <p>The Balance is : {{ res }}</p>
-  </div>
   <div class="row">
         <div class="col-md-8">
           <div class="input-group">
@@ -24,6 +21,9 @@
             </select>
           </div>
         </div>
+      </div>
+      <div class="container" style="margin-top: 3%, float: left;">
+    <p>The Balance is : {{ res }}</p>
       </div>
       <br><br>
     <div v-if="erri == 0">
@@ -73,18 +73,6 @@ let txst = ref(0);
 const search_data = ref();
 const final = ref("");
 const nfts=ref();
-// (async () => {
-//    res.value = parseInt(await alchemy.core.getBalance("0x884D7cFe40526BCe1A5be9c89Fd666b8eFcF2056", "latest"));
-//    console.log(res.value);
-//    txsf.value = await alchemy.core.getAssetTransfers({
-//    fromAddress:"0x884D7cFe40526BCe1A5be9c89Fd666b8eFcF2056",
-//    category:["external", "internal", "erc20", "erc721", "erc1155"]
-// });
-//   txst.value = await alchemy.core.getAssetTransfers({
-//     toAddress:"0x884D7cFe40526BCe1A5be9c89Fd666b8eFcF2056",
-//     category:["external", "internal", "erc20", "erc721", "erc1155"]
-//   })
-//  })();
 const router=useRouter();
 async function searchfn(){
   if(choice.value ==1){
