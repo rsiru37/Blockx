@@ -47,8 +47,6 @@
     </tr>
      </tbody>
     </table>
-    <h1> NFTS => </h1>
-    <h3> {{ nfts }}</h3>
     </div>
     <div v-else>
       <h1>{{ final }}</h1>
@@ -104,18 +102,12 @@ async function searchfn(){
   }
   else if(choice.value ==2){
     router.push({ name: 'TxhView', params: { id: search_data.value}});
-    // catch(err){
-    //   final.value = err.reason;
-    //   console.log("Error", err);
-    // }
-    // <RouterLink :to="{name: 'TxhView', params: { id: search_data.value } }">EDIT</RouterLink>
   }
   else if(choice.value ==3){
     console.log("e");
     router.push({ name: 'BlkView', params: { id: search_data.value}});
   }
 }
-// console.log(await alchemy.core.getBlockNumber());
 </script>
 
 
